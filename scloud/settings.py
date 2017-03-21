@@ -25,7 +25,7 @@ SECRET_KEY = 'h!l4_0=$%jzldgd!$hy**5*&5g&7khim%r$25@9i6o--h9k+%4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['runsimple.cloud']
 
 
 # Application definition
