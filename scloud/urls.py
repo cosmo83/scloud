@@ -21,5 +21,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^', include('dash.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^accounts/', include('django.contrib.auth.urls')), 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    #url(r'^accounts/', include('django.contrib.auth.urls')), 
+    url(r'^accounts/', include('allauth.urls')),
+    url(r'^avatar/', include('avatar.urls')),
+    url(r'^profile/', include('userprofiles.urls')),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
