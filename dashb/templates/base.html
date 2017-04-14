@@ -1,0 +1,33 @@
+{% include "header.html" %}
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-scribd"></i> <span>imple</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+	    {% include "menuprofile.html" %}
+            <br />
+
+	    {% include "sidebarmenu.html" %}
+            {% include "menufooterbuttons.html" %}
+          </div>
+        </div>
+	 
+        {% include "topnavigation.html" %}
+	<!-- page content -->
+        <div class="right_col" role="main">
+         {% block content %}
+         {% endblock %}
+        </div>
+        <!-- /page content -->
+
+	
+	{% include "footercontent.html" %}
+      </div>
+    </div>
+{% include "footer.html" %}
